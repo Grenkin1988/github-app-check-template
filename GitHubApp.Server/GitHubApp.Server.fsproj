@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="ConsistencyCheck.fs" />
+    <Compile Include="GitHubCheckStatusActor.fs" />
+    <Compile Include="GitHubCheckRunActor.fs" />
+    <Compile Include="Server.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="GitHubJwt" Version="0.0.3" />
+    <PackageReference Include="LibGit2Sharp" Version="0.26.0" />
+    <PackageReference Include="Octokit" Version="0.32.0" />
+    <PackageReference Include="Suave" Version="2.5.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GitHubApp.Checks\GitHubApp.Checks.csproj" />
+    <ProjectReference Include="..\GitHubApp.Core\GitHubApp.Core.fsproj" />
+    <ProjectReference Include="..\GitHubApp.Integration\GitHubApp.Integration.fsproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Update="FSharp.Core" Version="4.6.2" />
+  </ItemGroup>
+
+</Project>

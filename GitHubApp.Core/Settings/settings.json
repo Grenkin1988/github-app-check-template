@@ -1,0 +1,11 @@
+{
+  "repo-path": "C:\\github-app-check-template\\repos\\",
+  "pem-path": "C:\\github-app-check-template\\pem\\consistencygithubtest.2019-04-05.private-key.pem",
+  "webserver-port": 8008,
+  "github-uri": "github.com",
+  "github-app-identifier": 28439,
+  "ignored-branch-names": [
+    { "name": "master" },
+    { "name": "2019" }
+  ]
+}
