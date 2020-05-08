@@ -1,11 +1,24 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>..\build\</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>..\build\</OutputPath>
+  </PropertyGroup>
+
   <ItemGroup>
-    <Content Include="SampleJsons\CheckRunEvent.json" />
-    <Content Include="SampleJsons\CheckSuiteEvent.json" />
+    <Content Include="SampleJsons\CheckRunEvent.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SampleJsons\CheckSuiteEvent.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Compile Include="EventTypes.fs" />
     <Compile Include="ParseEvents.fs" />
   </ItemGroup>
