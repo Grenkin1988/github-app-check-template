@@ -1,4 +1,4 @@
 o@echo off
 cls
 
- dotnet build\GitHubApp.Server.dll
+dotnet build\GitHubApp.Server.dll

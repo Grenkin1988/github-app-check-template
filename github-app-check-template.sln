@@ -5,18 +5,17 @@ VisualStudioVersion = 16.0.28729.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "GitHubApp.Core", "GitHubApp.Core\GitHubApp.Core.fsproj", "{0AE1370D-3B3E-4267-9F05-F753B31A77D4}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "GitHubApp.Integration", "GitHubApp.Integration\GitHubApp.Integration.fsproj", "{D54466CB-A9F2-427D-9F21-F96005974C07}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "GitHubApp.Integration", "GitHubApp.Integration\GitHubApp.Integration.fsproj", "{D54466CB-A9F2-427D-9F21-F96005974C07}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "GitHubApp.Server", "GitHubApp.Server\GitHubApp.Server.fsproj", "{92F64FDC-E922-4757-ADAB-8B41859A79B1}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "GitHubApp.Server", "GitHubApp.Server\GitHubApp.Server.fsproj", "{92F64FDC-E922-4757-ADAB-8B41859A79B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitHubApp.Checks", "GitHubApp.Checks\GitHubApp.Checks.csproj", "{6BFD18D7-3F27-4036-B82B-85353E81B6DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GitHubApp.Checks", "GitHubApp.Checks\GitHubApp.Checks.csproj", "{6BFD18D7-3F27-4036-B82B-85353E81B6DF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00_Build", "00_Build", "{52909D1D-1E95-48A7-8C69-8B115130AB01}"
 	ProjectSection(SolutionItems) = preProject
-		.dockerignore = .dockerignore
+		.gitattributes = .gitattributes
 		.gitignore = .gitignore
 		build.cmd = build.cmd
-		Dockerfile = Dockerfile
 		README.md = README.md
 		run.cmd = run.cmd
 	EndProjectSection
